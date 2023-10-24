@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header,
+.footer {
+  background-color: rgb(119, 2, 2);
+  padding: 5px 0;
+}
+.main {
+  padding: 20px 0;
+  flex-grow: 1;
+  background-color: rgb(173, 175, 174);
+}
+.header-text,
+.footer-text {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.main__input,
+.main__body,
+.coffee-list {
+  width: 100%;
+}
+.coffee-input {
+  width: 100%;
+  padding: 5px 0 5px 10px;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 10px;
+}
+.coffee-list {
+  list-style: none;
+}
+.coffee-item {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  padding: 5px 0 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-window {
+  margin-top: auto;
+  width: 600px;
+  padding: 20px;
+  display: flex;
+  background-color: #fff;
+  z-index: 10;
+  flex-direction: column;
+}
+.modal-img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.modal-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.modal-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.ingridients-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.ingridients-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.ingridients-item {
+  margin-bottom: 10px;
+}
+
+.none {
+  display: none;
+}
+
+.close {
+  display: block;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(119, 2, 2);
+  color: white;
+  cursor: pointer;
+}
