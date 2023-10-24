@@ -62,19 +62,27 @@ body {
   align-items: center;
 }
 .modal-window {
-  margin-top: auto;
-  width: 600px;
+  width: 1000px;
   padding: 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  /* display: flex; */
   background-color: #fff;
   z-index: 10;
   flex-direction: column;
 }
 .modal-img {
-  width: 600px;
+  /* width: 300px; */
   height: 400px;
-  object-fit: cover;
+  object-fit: contain;
   margin-bottom: 10px;
+}
+.grid-left {
+  grid-column: 1/2;
+}
+.grid-right {
+  grid-column: 2/3;
 }
 .modal-title {
   font-size: 24px;
